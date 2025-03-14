@@ -2,23 +2,25 @@ body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     color: #003366;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 .container {
+    flex: 1;
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #00509e;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .header .Logo img {
@@ -67,8 +69,13 @@ body {
     font-size: 16px;
 }
 
-.footer {
-    background-color: #0073e6;
-    margin: 5px 0;
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
     font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
