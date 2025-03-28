@@ -1,24 +1,86 @@
-<!DOCTYPE html>
-<html lang="ca-ES">
-<head>
-<meta charset="utf-8"> 
-<title>DOCTOR MAIN PAGE</title>
-</head>
-<body>
-<div class="capcalera">
-    <a href="file:///home/jordi/Uni/IU/Proj_Interficie/doc/doctor.html" class="Logo" >
-        <img src="mdn_logo.png" alt="Logo">
-    </a>
-</div>
-<div class="barra de navegacio">
-    <nav class="navegador 4 items">
-    <ul>
-        <li class="Inici"><a href="doctor.html">Inici</a></li>
-        <li class="Buscador"><a href="buscador.html">Buscador</a></li>
-        <li class="Afegeix"><a href="afegeix.html">Afegeix</a></li>
-        <li class="Elimina"><a href="elmimina.html">Elimina</a></li>
-    </ul>
-</nav>
-</div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="ca-ES">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="doctorstyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="scripts.js"></script> 
+    <meta charset="utf-8"> 
+    <title>DOCTOR MAIN PAGE</title>
+    </head>
+    <body>
+    <!-- El Modal és similar a un popup-->
+    <div id="Modal" class="w3-modal">
+        <div class="w3-modal-content w3-row w3-animate-zoom">
+            <header class="w3-container">
+                <span id="close" class="w3-button w3-display-topright">&times;</span>
+                <h2>Filtrar Usuaris</h2>
+            </header>
+            <form class="w3-container">
+                <label class="w3-text-blue">Filtrar per Nom</label>
+                <input class="w3-input w3-border" type="text">
+                <label class="w3-text-blue">Filtrar per cognom</label>
+                <input class="w3-input w3-border" type="text">
+                <label class="w3-text-blue">Filtrar per DNI</label>
+                <input class="w3-input w3-border" type="text">
+                <p>
+                    <input class="w3-check" type="checkbox" checked="checked">
+                    <label>Prioritat Alta</label>
+                </p>
+                <p>
+                    <input class="w3-check" type="checkbox" checked="checked">
+                    <label>Prioritat Baixa</label>
+                </p>
+                <button id="Registered" class="w3-btn w3-blue">Filtrar</button>
+            </form>
+        </div>
+    </div>
+    <header class="w3-container w3-row w3-bar ">
+        <a href="./doctor.html" class="w3-col w3-quarter w3-left w3-bar-item" >
+            <img src="./Imatges/LogoUPC.png" alt="Logo" style="width:60%">
+        </a>
+
+        <div class="w3-col w3-bar-item w3-quarter w3-right">
+            <h2> 
+                NICOLÁS ORTIZ
+            </h2>   
+        </div>
+        <div class="w3-rest">
+        </div>
+    </header>
+    <nav class="w3-container w3-bar w3-row" >  
+        <a href="#" id="Add-user" class=" w3-col w3-left w3-bar-item w3-button w3-quarter "> 
+            <img src="./Imatges/ADDUSER.png" alt="AfegirUsuari" width="30" height="30">
+        </a>
+        <button class="w3-col w3-bar-item w3-button w3-right w3-quarter" id="But">
+            <img src="./Imatges/FilterIMG.png" alt="Filtrar" width="30" height="30">
+        </button>
+        <div class="w3-rest">
+        </div>
+    </nav>
+    <main class="w3-container">
+        <ul class="w3-ul w3-row">
+            <li class="w3-row w3-third ">
+                <a href="#" >
+                    <article class="w3-card-4 w3-container w3-round-xlarge w3-hover-opacity" >
+                        <header class="w3-center w3-center w3-rest">
+                            <h2 class="w3-text-indigo" >RUBÉN HERNANDEZ</h2>
+                        </header>
+                        <div class="w3-container w3-center w3-rest">
+                            <img src="./Imatges/User.png" alt="FotoPacient" style="width:30%">
+                            <h2 class="w3-text-indigo">Prioritat: ALTA</h2>
+                            <h2 class="w3-text-indigo">DNI: XXXXXXXXXXXXXX</h2>
+                        </div>
+                    </article>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <footer class="w3-container w3-indigo w3-center footer">
+        <h3>UPC MANRESA</h3>
+        <h3>Rubén Hernández, Jaume Pulido i Jordi Cabrera</h3>
+    </footer>
+    </body>
+    </html>

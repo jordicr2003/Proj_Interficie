@@ -1,0 +1,27 @@
+body{
+    background-color: #ffffff;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color: #d5e7f2;
+}
+a{
+    text-decoration: none;
+}
+article{
+    background-color: #d5e7f2;
+}
+
+footer{
+    position: fixed;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+
+    
